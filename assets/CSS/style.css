@@ -21,9 +21,6 @@ a.burrito:active {
 	background-color: #AF7AC5;
 }
 
-* {
-	box-sizing: border-box;
-}
 
 body {
 	font-size: 18px;
@@ -134,11 +131,3 @@ nav a {
  	float: left;
  	
  }
-
-.social {
-	width: 62px;
- 	height: 62px
- 	margin-top: 8px;
- 	margin-right: 5px;
-}
-
