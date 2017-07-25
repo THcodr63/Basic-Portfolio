@@ -21,6 +21,9 @@ a.burrito:active {
 	background-color: #AF7AC5;
 }
 
+* {
+	box-sizing: border-box;
+}
 
 body {
 	font-size: 18px;
@@ -59,6 +62,7 @@ h2, h3 {
 h1.window{
 	color: #abf3b1;
 	border-bottom: 1.5px solid #AF7AC5;
+
 } 
 h2.window {
 	color: #abf3b1;
@@ -94,6 +98,7 @@ h2.lump {
 	color: #ccc;
 	overflow: auto;
 	border-bottom: 2px solid #000000;
+	position: fixed;
 	width: 100%;
 }
 
@@ -123,7 +128,28 @@ nav a {
 	padding-left: 15px;
 	line-height: 18px;
 }
-  .auth-image, .kokoro {
+
+nav a:first-child {
+	border-left: 0 none;
+}
+
+/*main*/
+
+#main-container {
+	padding-top: 130px;
+}
+
+.main-section, .main-con {
+	background: #fff;
+	padding: 30px;
+	margin: 0 0 40px 0;
+	width: 100%;
+	max-width: 650px;
+	float: left;
+	border: 1px solid #ddd;
+}
+
+.auth-image, .kokoro {
  	width: 200px;
  	height: auto;
  	margin-top: 10px;
@@ -131,3 +157,39 @@ nav a {
  	float: left;
  	
  }
+
+ /*Sidebar*/
+
+ .sidebar {
+ 	border-bottom: #fff;
+ 	padding: 30px;
+ 	width: 100%;
+ 	max-width: 270px;
+ 	float: right;
+ 	border: 1px solid #ddd;
+ 	margin-bottom: 20px;
+ }
+
+h3, .sidebar, h2 {
+	border-bottom: 2px solid #eee;
+	padding-bottom: 20px;
+	margin-bottom: 15px;
+	line-height: 22px;
+}
+
+.social {
+	width: 62px;
+	height: 62px;
+	margin-top: 8px;
+	margin-right: 5px; 
+ }
+
+.social:last-child {
+margin-right: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  #main-container {
+   background-color: green;
+	}
+}
